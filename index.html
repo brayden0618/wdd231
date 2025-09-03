@@ -3,9 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="This is the Course Home Page for WDD 231">
+    <meta name="author" content="Brayden Wayman">
+    <title>Course Home Page</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <img src="images/logo.svg" alt="site logo" height="50">
+        <span>Brayden Wayman</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <nav>
+        <a href="#">Course Home Page</a>
+        <a href="#">Chamber of Commerce</a>
+        <a href="#">Final project</a>
+    </nav>
+    <main>
+        <h1>Home Page</h1>
+        <section>
+            <h2>About Me</h2>
+            <p>My name is Brayden Wayman. I have high-functioning autism, and I love coding. I am learning so much in BYU Pathway and the classes they offer. I'm excited to keep learning more about progarmming and coding. I think it's really fun!</p>
+        </section>
+        <section>
+            <h2>Student Photo</h2>
+            <img src="images/profile.png" alt="Brayden Wayman" width="200">
+        </section>
+        <section>
+            <h2>Web Certificate Courses</h2>
+            <div id="filter-buttons">
+                <button data-filter="all">All Courses</button>
+                <button data-filter="wdd">WDD Courses</button>
+                <button data-filter="cse">CSE Courses</button>
+            </div>
+            <div id="course-list"></div>
+            <p>Total Credits: <span id="creditTotal">0</span></p>
+        </section>
+    </main>
+    <footer>
+        <div class="social-links">
+        <a href="https://github.com/brayden0618" target="_blank" aria-label="GitHub">
+            <img src="images/github.svg" alt="GitHub" width="24">
+        </a>
+        <a href="https://www.linkedin.com/in/brayden-wayman-976916314/" target="_blank" aria-label="LinkedIn">
+            <img src="images/linkedin.svg" alt="LinkedIn" width="24">
+        </a>
+        <a href="https://www.facebook.com/brayden.wayman.2025" target="_blank" aria-label="Facebook">
+            <img src="images/facebook.svg" alt="Facebook" width="24">
+        </a>
+        </div>
+        <p>&copy; <span id="currentYear"></span> Brayden Wayman, Utah.</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
