@@ -33,7 +33,7 @@
     /* Main Content */
     main {
         display: grid;
-        grid-template-columns: repeat(fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(minmax(300px, 1fr));
         gap: 2rem;
         padding: 2rem;
     }
