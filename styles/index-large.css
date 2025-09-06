@@ -61,6 +61,23 @@
         padding: 1.5rem;
     }
 
+    #course-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .course-card {
+        border-radius: 6px;
+        padding: 1rem;
+        min-width: 150px;
+        max-width: 200px;
+        text-align: center;
+        font-weight: 600;
+    }
+
     /* Footer */
     footer {
         display: flex;
