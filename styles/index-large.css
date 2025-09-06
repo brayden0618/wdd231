@@ -32,10 +32,29 @@
 
     /* Main Content */
     main {
-        display: grid;
-        grid-template-columns: 500px 1fr;
+        width: 100%;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .home-layout {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
         gap: 2rem;
-        padding: 2rem;
+        max-width: 1000px;
+        margin: 0 auto;
+        grid-column: 1 / -1;
+    }
+
+    .home-layout section {
+        flex: 1;
+        max-width: 450px;
+    }
+
+    .photo img {
+        margin: 0 auto;
     }
 
     section {
