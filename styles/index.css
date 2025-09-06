@@ -42,7 +42,7 @@ header {
 }
 
 header img {
-    height: 40px;
+    height: 50px;
 }
 
 header span {
@@ -117,8 +117,18 @@ main {
 }
 
 main h1 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--background-color);
+}
+
+.home-layout {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    height: 700px;
+    gap: 2rem;
+    margin-bottom: 2rem;
 }
 
 section {
@@ -127,6 +137,20 @@ section {
     padding: 1rem;
     border-radius: 6px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.courses {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.courses h2 {
+    text-align: center;
+    background-color: var(--third-color);
+    color: white;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
 }
 
 h1 {
@@ -170,23 +194,39 @@ a:hover {
     border-left: 5px solid green;
 }
 
+.total-credits {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
 #filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
     margin-bottom: 1rem;
 }
 
 #filter-buttons button {
-    margin-right: 0.5rem;
     padding: 0.5rem 1rem;
-    cursor: pointer;
+    background-color: var(--third-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+#filter-buttons button:hover {
+    background-color: var(--hover--color);
 }
 
 /* Footer */
 footer {
     margin-top: 2rem;
-    padding: 1rem;
+    padding: 2rem 1rem;
     background-color: var(--background-color);
     color: var(--primary-color);
     text-align: center;
+    font-size: 0.9rem;
 }
 
 footer p {

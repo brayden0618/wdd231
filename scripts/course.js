@@ -13,7 +13,6 @@ const buttons = document.querySelectorAll('#filter-buttons button');
 
 function renderCourses(filteredCourses) {
     courseList.innerHTML = ''; 
-    let totalCredits = 0;
 
     filteredCourses.forEach(course => {
         const card = document.createElement('div');
@@ -26,11 +25,11 @@ function renderCourses(filteredCourses) {
             <p>Credits: ${course.credits}</p>
         `;
 
-        totalCredits += course.credits;
         courseList.appendChild(card);
     });
 
-    creditTotal.textContent = totalCredits;
+    const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
+    creditTotal.textContent = totalCredits
 }
 
 // Filter 
