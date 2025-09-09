@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Burbach Exteriors",
+        "address": "3362 W 1820 S, Salt Lake City, UT 84104",
+        "phone": "435-291-7883",
+        "website": "https://burbachexteriors.com/",
+        "image": "../images/burbach.jpg",
+        "membership": 3,
+        "description": "Renovation By Burbach breathes new life into homes with timeless and captivating exterior renovations. Specializing in siding, stucco, stone, rain gutters, soffit, and fascia, our seasoned team is driven by quality and attention to detail."
+    },
+    {
+        "name":"Deseret Book",
+        "address":"3651 W Market Center Dr, Ste 100 Riverton, UT 84065",
+        "phone":"(801) 282-8666",
+        "website": "https://www.deseretbook.com/",
+        "image": "../images/DBook.png",
+        "membership": 3,
+        "description": "The Biggest Selection of LDS Books, Art, Movies & More!"
+    },
+    {
+        "name": "Maverik",
+        "address": "5566 W Main St Herriman, UT 84096",
+        "phone": "(385) 464-1270",
+        "website": "https://www.maverik.com/",
+        "image": "../images/maverik.jpg",
+        "membership": 2,
+        "description": "Maverik is Adventure's First Stop -- the place to go for fuel, drinks, food and goodies on your way to life's thrills. Head in to fill your tank and grab some fresh-made BonFire food along with your favorite beverages and treats."
+    },
+    {
+        "name":"Megaplex",
+        "address": "165 S Rio Grande St, The Gateway Salt Lake City, UT 84101-1181",
+        "phone": "(801) 325-7500",
+        "website": "https://megaplex.com/",
+        "image": "../images/megaplex.jpg",
+        "membership": 2,
+        "description": "Watch movie trailers, order food and drinks online, find luxury seating, and see showtimes of feature films and movies currently playing near you at Megaplex Theatres."
+    },
+    {
+        "name": "Deseret Industries",
+        "address": "12449 S Creek Meadow Rd Riverton, UT 84065",
+        "phone": "(801) 302-7502",
+        "website": "https://www.deseretindustries.org/",
+        "image": "../images/DI.png",
+        "membership": 2,
+        "description": "When you donate and shop at Deseret Industries, you contribute to a job training program. You are not only giving things new life—you are giving people new life."
+    },
+    {
+        "name": "JCW",
+        "address": "5251 Anthem Park Blvd. Herriman UTAH 84096",
+        "phone": "(801) 253-8028",
+        "website": "https://jcws.com/",
+        "image": "../images/jcw.jpg",
+        "membership": 1,
+        "description": "In 1998, two brothers opened the very first JCW's in an old Hardee's building in American Fork. We'd cut our teeth in the restaurant business, but opening our own place was still a big step and truly a longtime dream-come-true. At some point during those early, exciting days, a good friend of ours dubbed us The Burger Boys, and the name has stuck ever since."
+    },
+    {
+        "name": "Chick-fil-A",
+        "address": "4627 W Partridge Hill Ln Riverton, UT 84096",
+        "phone": "(801) 509-7680",
+        "website": "https://order.chick-fil-a.com/get-started",
+        "image": "../images/Chicken.png",
+        "membership": 1,
+        "description": "Any size group. Any dietary need. Anytime day or night. Food for work. It's our thing. Need food for a meeting? Order from 99,000 restaurants nationwide."
+    },
+    {
+        "name": "Hobby Lobby",
+        "address": "11681 Parkway Plaza Dr South Jordan, UT 84095",
+        "phone": "(801) 352-4295",
+        "website": "https://www.hobbylobby.com/",
+        "image": "../images/hobby.jpg",
+        "membership":1,
+        "description": "Find Trendy Fabric Near You At Your Local Hobby Lobby®. Save On Stylish Fabric In A Variety Of Colors, Materials & Styles."
+    }
+]
