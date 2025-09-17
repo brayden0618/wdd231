@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Salt Lake Chamber of Commerce: Connecting businesses, resources, and community in Salt Lake.">
+    <meta name="keywords" content="Salt Lake, Chamber of Commerce, business, networking, resources, events">
+    <meta name="author" content="Brayden Wayman">
+    <meta property="og:title" content="Salt Lake Chamber of Commerce">
+    <meta property="og:description" content="Connecting businesses, resources, and community in Salt Lake.">
+    <meta property="og:image" content="https://brayden0618.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://brayden0618.github.io/wdd231/chamber/directory.html">
+    <title>Salt Lake Chamber of Commerce Home</title>
+    <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../chamber/styles/index.css">
+    <link rel="stylesheet" href="../chamber/styles/index-large.css">
+    <script src="../chamber/scripts/index.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="../images/logo.svg" alt="Chamber Logo" height="50">
+        <span>Salt Lake Chamber of Commerce</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="main-nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="events.html">Events</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <img src="../chamber/images/hero.jpg" alt="Salt Lake City Skyline">
+        <h1>Welcome to the Salt Lake Chamber of Commerce</h1>
+        <p>Your gateway to business networking, resources, and community events in Salt Lake.</p>
+        <a href="join.html" class="cta-button">Join Now</a>
+        <section class="features">
+            <div class="feature">
+                <h2>Business Networking</h2>
+                <p>Connect with local businesses and professionals to grow your network and opportunities.</p>
+            </div>
+            <div class="feature">
+                <h2>Resources</h2>
+                <p>Access valuable resources, workshops, and seminars to help your business thrive.</p>
+            </div>
+            <div class="feature">
+                <h2>Community Events</h2>
+                <p>Participate in events that bring together businesses and the community for networking and collaboration.</p>
+            </div>
+        </section>
+        <section class="current-events">
+            <h2>Current Events</h2>
+            <ul>
+                <li>Networking Breakfast - October 15, 2025</li>
+                <li>Business Workshop: Marketing Strategies - October 22, 2025</li>
+                <li>Community Clean-Up Day - November 5, 2025</li>
+            </ul>
+        </section>
+        <section class="weather">
+            <h2>Current Weather in Salt Lake City</h2>
+            <div id="weather-info">
+                <!-- Javascript information -->
+            </div>
+        </section>
+        <section class="spotlights">
+            <h2>Spotlight Businesses</h2>
+            <p>Each time you visit, we highlight a few of our Gold and Silver member businesses:</p>
+            <div class="spotlight-cards" id="spotlight-cards">
+                <!-- Javascript information -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <p>Contact: info@saltlakechamber.com | (801) 555-1234</p>
+        </div>
+        <div class="social-links">
+        <a href="https://github.com/brayden0618" target="_blank" aria-label="Git Hub">
+            <img src="../images/github.svg" alt="Git Hub" width="24">
+        </a>
+        <a href="https://www.linkedin.com/in/brayden-wayman-976916314/" target="_blank" aria-label="LinkedIn">
+            <img src="../images/linkedin.svg" alt="LinkedIn" width="24">
+        </a>
+        <a href="https://www.facebook.com/brayden.wayman.2025" target="_blank" aria-label="Facebook">
+            <img src="../images/facebook.svg" alt="Facebook" width="24">
+        </a>
+        </div>
+        <div class="dev-info">
+            <p>Brayden Wayman | WDD 231</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>

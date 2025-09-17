@@ -113,7 +113,7 @@ h1 {
 }
 
 .view-toggle button:hover {
-  background-color: #d8862e;
+  background-color: var(--primary-color);
 }
 
 #directory-list {
