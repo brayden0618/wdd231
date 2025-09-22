@@ -1,15 +1,21 @@
 const courses = [
-    { code: 'CSE 110', name: 'Introduction to Programming', credits: 2, completed: true },
-    { code: 'CSE 111', name: 'Programming with Functions', credits: 2, completed: true },
-    { code: 'CSE 210', name: 'Programming with Classes', credits: 2, completed: false },
-    { code: 'WDD 130', name: 'Web Fundamentals', credits: 2, completed: true },
-    { code: 'WDD 131', name: 'Dynamic Web Fundamentals', credits: 2, completed: true },
-    { code: 'WDD 231', name: 'Frontend Development I', credits: 2, completed: false }
+    { code: 'CSE 110', title: 'Introduction to Programming', credits: 2, description: 'Learn the basics of programming.', completed: true },
+    { code: 'CSE 111', title: 'Programming with Functions', credits: 2, description: 'Understand functions in programming.', completed: true },
+    { code: 'CSE 210', title: 'Programming with Classes', credits: 2, description: 'Learn about object-oriented programming.', completed: false },
+    { code: 'WDD 130', title: 'Web Fundamentals', credits: 2, description: 'Introduction to web development.', completed: true },
+    { code: 'WDD 131', title: 'Dynamic Web Fundamentals', credits: 2, description: 'Learn about dynamic web applications.', completed: true },
+    { code: 'WDD 231', title: 'Frontend Development I', credits: 2, description: 'Introduction to frontend development.', completed: false }
 ];
 
 const courseList = document.getElementById('course-list');
 const creditTotal = document.getElementById('creditTotal');
 const buttons = document.querySelectorAll('#filter-buttons button');
+const courseDetailsDialog = document.getElementById('course-details');
+const courseTitle = document.getElementById('courseTitle');
+const courseCode = document.getElementById('courseCode');
+const courseCredits = document.getElementById('courseCredits');
+const courseDescription = document.getElementById('courseDescription');
+const closeModal = document.getElementById('close-modal');
 
 function renderCourses(filteredCourses) {
     courseList.innerHTML = ''; 
@@ -21,7 +27,7 @@ function renderCourses(filteredCourses) {
 
         card.innerHTML = `
             <h3>${course.code}</h3>
-            <p>${course.name}</p>
+            <p>${course.title}</p>
             <p>Credits: ${course.credits}</p>
         `;
 
@@ -53,4 +59,24 @@ buttons.forEach(button => {
 // Default display
 document.addEventListener('DOMContentLoaded', () => {
     renderCourses(courses);
+});
+
+// Dialog functionality
+courseList.addEventListener('click', (e) => {
+    const card = e.target.closest('.course-card');
+    if (!card) return;
+
+    const course = courses.find(c => c.code === card.querySelector('h3').textContent);
+    if (!course) return;
+
+    courseTitle.textContent = course.title;
+    courseCode.textContent = course.code;
+    courseCredits.textContent = course.credits;
+    courseDescription.textContent = course.description;
+
+    courseDetailsDialog.showModal();
+});
+
+closeModal.addEventListener('click', () => {
+    courseDetailsDialog.close();
 });

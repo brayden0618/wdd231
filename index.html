@@ -15,6 +15,7 @@
     <script src="scripts/course.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dialog.js" defer></script>
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +33,7 @@
     </header>
     <nav>
         <a href="https://brayden0618.github.io/wdd231/">Course Home Page</a>
-        <a href="#">Chamber of Commerce</a>
+        <a href="https://brayden0618.github.io/wdd231/chamber/">Chamber of Commerce</a>
         <a href="#">Final project</a>
     </nav>
     <div class="container">
@@ -58,6 +59,16 @@
                 <div id="course-list"></div>
                 <p>Total Credits: <span id="creditTotal">0</span></p>
             </section>
+            <dialog id="course-details">
+                <div class="dialog-content">
+                    <button id="close-modal" aria-label="Close">&times;</button>
+                    <h2 id="courseTitle"></h2>
+                    <p><strong>Course Code:</strong> <span id="courseCode"></span></p>
+                    <p><strong>Credits:</strong> <span id="courseCredits"></span></p>
+                    <p><strong>Description:</strong></p>
+                    <p id="courseDescription"></p>
+                </div>
+            </dialog>
         </main>
     </div>
     <footer>
