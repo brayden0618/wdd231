@@ -155,7 +155,7 @@ p {
   background-color: var(--accent-color);
 }
 
-.membership-fieldset {
+.membership {
   margin-bottom: 1rem;
   border: 1px solid var(--accent-color);
   border-radius: var(--border-radius);
@@ -164,12 +164,12 @@ p {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.membership-fieldset legend {
+.membership legend {
   font-weight: bold;
   padding: 0 0.5rem;
 }
 
-.membership-fieldset label {
+.membership label {
   font-weight: normal;
   margin-right: 1rem;
   display: inline-block;
@@ -200,9 +200,57 @@ p {
   text-align: center;
 }
 
+@keyframes entrance {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes exit {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.membership-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.membership-card.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .membership-card h3 {
   margin-bottom: 0.5rem;
   color: var(--primary-color);
+}
+
+.membership-card p {
+  margin-bottom: 0.5rem;
+}
+
+.membership-fieldset {
+    border: 1px solid var(--accent-color);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 5rem;
 }
 
 .layout {
@@ -242,48 +290,6 @@ dialog.modal {
     width: 100%;
     flex: 0 0 auto;
   }
-}
-
-@keyframes entrance {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes exit {
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  to {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-}
-
-[data-animation] {animation: entrance 600ms ease forwards; opacity: 0;}
-[data-animation]:nth-child(1) {animation-delay: 100ms;}
-[data-animation]:nth-child(2) {animation-delay: 200ms;}
-[data-animation]:nth-child(3) {animation-delay: 300ms;}
-[data-animation]:nth-child(4) {animation-delay: 400ms;}
-
-.modal {
-  border: none;
-  border-radius: var(--border-radius);
-  padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  max-width: 400px;
-  width: 90%;
-  animation: entrance 0.3s ease-out;
-}
-
-.modal::backdrop {
-  background: rgba(0, 0, 0, 0.5);
 }
 
 footer {

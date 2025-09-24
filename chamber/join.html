@@ -14,7 +14,7 @@
     <link rel="icon" href="../favicon.ico">
     <link rel="stylesheet" href="../chamber/styles/join.css">
     <link rel="stylesheet" href="../chamber/styles/index-large.css">
-    <script src="../chamber/scripts/index.js" defer></script>
+    <script src="../chamber/scripts/join.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,9 +76,9 @@
         <input type="text" name="organization" title="Business or organization name" autocomplete="organization" required />
       </label>
 
-      <fieldset class="membership-fieldset" aria-label="Membership level" aria-required="true">
+      <fieldset role="group" class="membership-fieldset" aria-label="Membership level">
         <legend>Membership Level</legend>
-        <label><input type="radio" name="membership" value="NP" checked /> NP (Non-profit) — no fee</label>
+        <label><input type="radio" name="membership" value="NP" checked /> Non-profit</label>
         <label><input type="radio" name="membership" value="Bronze" /> Bronze</label>
         <label><input type="radio" name="membership" value="Silver" /> Silver</label>
         <label><input type="radio" name="membership" value="Gold" /> Gold</label>

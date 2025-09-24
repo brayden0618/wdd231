@@ -5,51 +5,50 @@ document.addEventListener('DOMContentLoaded', () => {
     const lm = document.getElementById('lastModified');
     if (lm) lm.textContent = 'Last Modified: ' + document.lastModified;
 
-    const links = document.querySelectorAll('.info-link');
-    links.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const id = link.dataset.modal;
-            const dlg = document.getElementById(id);
-            if (dlg && typeof dlg.showModal === 'function') {
-                dlg.classList.remove('animate', 'closing');
-                void dlg.offsetWidth; // force reflow
-                dlg.classList.add('animate');
-                dlg.showModal();
-                const btn = dlg.querySelector('[data-close]') || dlg.querySelector('button');
-                if (btn) btn.focus();
-            }
-        });
+  const cards = document.querySelectorAll('.membership-card');
+  cards.forEach((card, i) => {
+      setTimeout(() => {
+          card.classList.add('animate-in');
+      }, i * 120);
+  });
+
+  const links = document.querySelectorAll('.info-link');
+  links.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const id = link.dataset.modal;
+      const dlg = document.getElementById(id);
+        
+      if (!dlg) {
+          console.warn(`No dialog found with ID: ${id}`);
+        }
+
+      if (dlg && typeof dlg.showModal === 'function') {
+          dlg.classList.remove('animate-open');
+        void dlg.offsetWidth;
+        dlg.showModal();
+        dlg.classList.add('animate-open');
+
+        const btn = dlg.querySelector('[data-close]') || dlg.querySelector('button');
+        if (btn) btn.focus();
+      }
     });
+  });
     
     document.querySelectorAll('dialog.modal').forEach(dlg => {
-        const closeModal = () => {
-            dlg.classList.remove('animate');
-            dlg.classList.add('closing');
-
-            dlg.addEventListener('animationend', function handleClose() {
+        const closeBtn = dlg.querySelector('[data-close]') || dlg.querySelector('button');
+        if (closeBtn) {
+            closeBtn.addEventListener('click', () => {
                 dlg.close();
-                dlg.classList.remove('closing');
-                dlg.removeEventListener('animationend', handleClose);
+                dlg.classList.remove('animate-open');
             });
-        };
-
-        dlg.addEventListener('click', (e) => {
-            const rect = dlg.getBoundingClientRect();
-            if (e.clientX < rect.left || e.clientX > rect.right || e.clientY < rect.top || e.clientY > rect.bottom) {
-                closeModal();
-            }
-        });
+        }
 
         dlg.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
-                closeModal();
+                dlg.close();
+                dlg.classList.remove('animate-open');
             }
         });
-
-        const closeBtn = dlg.querySelector('[data-close]');
-        if (closeBtn) {
-            closeBtn.addEventListener('click', closeModal);
-        }
     });
 });
