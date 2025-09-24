@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Salt Lake Chamber of Commerce: Connecting businesses, resources, and community in Salt Lake.">
+    <meta name="keywords" content="Salt Lake, Chamber of Commerce, business, networking, resources, events">
+    <meta name="author" content="Brayden Wayman">
+    <meta property="og:title" content="Salt Lake Chamber of Commerce">
+    <meta property="og:description" content="Connecting businesses, resources, and community in Salt Lake.">
+    <meta property="og:image" content="https://brayden0618.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://brayden0618.github.io/wdd231/chamber/directory.html">
+    <title>Salt Lake Chamber of Commerce Join</title>
+    <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../chamber/styles/join.css">
+    <link rel="stylesheet" href="../chamber/styles/index-large.css">
+    <script src="../chamber/scripts/index.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="../images/logo.svg" alt="Chamber Logo" height="50">
+        <span>Salt Lake Chamber of Commerce</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="main-nav">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="events.html">Events</a>
+            <a href="resources.html">Resources</a>
+            <a href="join.html" class="active">Join</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main class="layout">
+    <form id="joinForm" method="get" action="thankyou.html" class="join-form" novalidate>
+      <h1>Membership Application</h1>
+
+      <label>
+        First Name
+        <input type="text" name="firstName" title="Applicant first name" autocomplete="given-name" required />
+      </label>
+
+      <label>
+        Last Name
+        <input type="text" name="lastName" title="Applicant last name" autocomplete="family-name" required />
+      </label>
+
+      <label>
+        Organizational Title
+        <input type="text" name="orgTitle" title="Title within your organization"
+               autocomplete="organization-title"
+               pattern="^[A-Za-z\s-]{7,}$"
+               placeholder="e.g. Executive Director"
+               />
+      </label>
+
+      <label>
+        Email Address
+        <input type="email" name="email" title="Email address" autocomplete="email" placeholder="name@example.com" required />
+      </label>
+
+      <label>
+        Mobile Phone
+        <input type="tel" name="mobile" title="Mobile phone number" autocomplete="tel" placeholder="555-555-1212" required />
+      </label>
+
+      <label>
+        Business / Organization Name
+        <input type="text" name="organization" title="Business or organization name" autocomplete="organization" required />
+      </label>
+
+      <fieldset class="membership-fieldset" aria-label="Membership level" aria-required="true">
+        <legend>Membership Level</legend>
+        <label><input type="radio" name="membership" value="NP" checked /> NP (Non-profit) — no fee</label>
+        <label><input type="radio" name="membership" value="Bronze" /> Bronze</label>
+        <label><input type="radio" name="membership" value="Silver" /> Silver</label>
+        <label><input type="radio" name="membership" value="Gold" /> Gold</label>
+      </fieldset>
+
+      <label>
+        Organization Description
+        <textarea name="description" title="Business or organization description" rows="4"></textarea>
+      </label>
+
+      <label style="display:none;">
+        Timestamp
+        <input type="hidden" id="timestamp" name="timestamp" />
+      </label>
+
+      <div class="form-actions">
+        <button type="submit">Submit Application</button>
+      </div>
+    </form>
+
+    <aside class="membership-cards" aria-label="Membership options">
+      <h2>Membership Levels</h2>
+
+      <div class="cards">
+        <article class="membership-card" data-anim>
+          <h3>NP Membership</h3>
+          <p>Non-profit membership — no fee.</p>
+          <a href="#" class="info-link" data-modal="modal-np">More info</a>
+        </article>
+
+        <article class="membership-card" data-anim>
+          <h3>Bronze</h3>
+          <p>Basic benefits: listing, event invites.</p>
+          <a href="#" class="info-link" data-modal="modal-bronze">More info</a>
+        </article>
+
+        <article class="membership-card" data-anim>
+          <h3>Silver</h3>
+          <p>Includes Bronze + discounted events and training.</p>
+          <a href="#" class="info-link" data-modal="modal-silver">More info</a>
+        </article>
+
+        <article class="membership-card" data-anim>
+          <h3>Gold</h3>
+          <p>Premium listing, spotlight advertising, VIP events.</p>
+          <a href="#" class="info-link" data-modal="modal-gold">More info</a>
+        </article>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Modal dialogs for each membership level -->
+  <dialog id="modal-np" class="modal" aria-labelledby="modal-np-title">
+    <h3 id="modal-np-title">NP Membership — Benefits</h3>
+    <p>Free membership for registered non-profits. Benefits: directory listing, event invites, volunteer board announcements.</p>
+    <button class="close" data-close>Close</button>
+  </dialog>
+
+  <dialog id="modal-bronze" class="modal" aria-labelledby="modal-bronze-title">
+    <h3 id="modal-bronze-title">Bronze Membership — Benefits</h3>
+    <ul>
+      <li>Directory listing</li>
+      <li>Access to networking events</li>
+      <li>Monthly newsletter inclusion</li>
+    </ul>
+    <button class="close" data-close>Close</button>
+  </dialog>
+
+  <dialog id="modal-silver" class="modal" aria-labelledby="modal-silver-title">
+    <h3 id="modal-silver-title">Silver Membership — Benefits</h3>
+    <ul>
+      <li>All Bronze benefits</li>
+      <li>Discounted training and workshops</li>
+      <li>Priority event registration</li>
+    </ul>
+    <button class="close" data-close>Close</button>
+  </dialog>
+
+  <dialog id="modal-gold" class="modal" aria-labelledby="modal-gold-title">
+    <h3 id="modal-gold-title">Gold Membership — Benefits</h3>
+    <ul>
+      <li>All Silver benefits</li>
+      <li>Featured spotlight on homepage</li>
+      <li>Premium sponsorship opportunities</li>
+    </ul>
+    <button class="close" data-close>Close</button>
+  </dialog>
+
+  <footer>
+    <p>&copy; Salt Lake Chamber — Contact: info@example.com</p>
+    <p>Brayden Wayman — WDD 231 — <span id="lastModified">Last Modified: </span></p>
+  </footer>
+</body>
+</html>
