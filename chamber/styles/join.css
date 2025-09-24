@@ -296,6 +296,21 @@ dialog.modal {
     display: none;
 }
 
+.thankyou {
+    text-align: center;
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.thankyou p {
+    margin: 0.5rem 0;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
 footer {
   text-align: center;
   padding: 1rem;
