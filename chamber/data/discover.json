@@ -1,0 +1,104 @@
+[
+  {
+    "name": "Natural History Museum of Utah",
+    "address": "301 Wakara Way, Salt Lake City, UT 84108",
+    "cost": {
+      "adult": "$22.95",
+      "child": "$17.95 (ages 3–12)",
+      "under2": "Free"
+    },
+    "description": "A museum showcasing Utah’s geology, paleontology (dinosaurs), ecosystems, and cultural history with panoramic views of the Salt Lake Valley.",
+    "photo_link": "Utah-Museum.webp"
+  },
+  {
+    "name": "Red Butte Garden & Arboretum",
+    "address": "300 Wakara Way, Salt Lake City, UT 84108",
+    "cost": {
+      "adult": "$16",
+      "senior": "$14",
+      "child": "$8 (ages 3–17)",
+      "under2": "Free"
+    },
+    "description": "Utah’s state arboretum with themed botanical gardens, natural trails, and seasonal concerts.",
+    "photo_link": "Red-Butte-Garden.webp"
+    },
+  {
+    "name": "Temple Square",
+    "address": "50 North Temple Street, Salt Lake City, UT",
+    "cost": "Free",
+    "description": "Five downtown city blocks featuring historic buildings, gardens, the Tabernacle, Assembly Hall, and visitor centers related to the Church of Jesus Christ of Latter-day Saints.",
+    "photo_link": "Temple-Square.webp"
+    },
+  {
+    "name": "This Is The Place Heritage Park",
+    "address": "2601 East Sunnyside Ave, Salt Lake City, UT 84108",
+    "cost": {
+      "adult": "$18.95",
+      "senior": "$16.95",
+      "child": "$14.95",
+      "under2": "Free"
+    },
+    "description": "A 450-acre living history park with pioneer-era buildings, costumed interpreters, train rides, farm animals, and gold-panning.",
+    "photo_link": "monument.webp"
+  },
+  {
+    "name": "Utah’s Hogle Zoo",
+    "address": "2600 East Sunnyside Ave, Salt Lake City, UT 84108",
+    "cost": {
+      "adult": "$24.95 (summer), $21.95 (off-season)",
+      "child": "$20.95",
+      "under2": "Free"
+    },
+    "description": "A zoo with over 800 animals, interactive exhibits, a splash pad, carousel, and seasonal events.",
+    "photo_link": "Hogle-Zoo.webp"
+  },
+  {
+    "name": "Clark Planetarium",
+    "address": "110 S 400 W, Salt Lake City, UT 84101",
+    "cost": {
+      "exhibits": "Free",
+      "shows": "$10 adults, $8 children"
+    },
+    "description": "Interactive science and space museum with free exhibits and immersive dome and IMAX shows for an additional fee.",
+    "photo_link": "Planetarium.webp"
+  },
+  {
+    "name": "Great Salt Lake / Stansbury Island",
+    "address": "Antelope Island State Park, accessed via Antelope Drive, Syracuse, UT (I-15 Exit 332)",
+    "cost": {
+      "vehicle": "$15",
+      "senior_vehicle": "$10",
+      "motorcycle": "$5",
+      "bicycle_or_pedestrian": "$3"
+    },
+    "description": "A natural getaway to experience the Great Salt Lake: wildlife viewing (bison, antelope), hiking, floating in the lake, and scenic drives.",
+   "photo_link": "Great-Salt-Lake.webp"
+  },
+  {
+    "name": "Utah Museum of Fine Arts (UMFA)",
+    "address": "410 Campus Center Drive, Salt Lake City, UT 84112",
+    "cost": {
+      "adult": "$19.95",
+      "senior": "$16.95",
+      "youth": "$16.95",
+      "under5": "Free",
+      "free_days": "First Wednesday & third Saturday each month"
+    },
+    "description": "The state’s premier art museum with global collections from ancient to contemporary, plus rotating exhibitions and programs.",
+    "photo_link": "UMFA.webp"
+  },
+  {
+    "name": "Neighborhood & Mural Walks",
+    "address": "Various areas: Downtown, 9th & 9th, The Avenues, Maven District",
+    "cost": "Free (self-guided)",
+    "description": "Explore Salt Lake City’s vibrant street art, murals, and local neighborhood culture on foot.",
+    "photo_link": "Mural.webp"
+  },
+  {
+    "name": "Live Shows & Concerts",
+    "address": "Various venues: Eccles Theater, Capitol Theatre, The Depot, The State Room",
+    "cost": "Varies by event",
+    "description": "Salt Lake City’s performing arts scene includes Broadway musicals, concerts, plays, and local entertainment across multiple venues.",
+    "photo_link": "Concert.webp"
+  }
+]
