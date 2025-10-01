@@ -1,0 +1,50 @@
+:root {
+   --background-color: rgb(84, 3, 3);
+    --text-color: black;
+    --primary-color: rgb(255, 255, 125);
+    --font-family: 'Open Sans', 'Roboto Condensed'
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+h1 {
+    background-color: var(--primary-color);
+    display: inline;
+    border-radius: 0%;
+}
+
+.site-purpose {
+    background-color: var(--primary-color);
+    display: block;
+}
+
+.scenarios {
+    background-color: var(--primary-color);
+    position: relative;
+    display: block;
+    padding: 1 1rem;
+    align-items: center;
+}
+
+.color-schema {
+    background-color: var(--primary-color);
+    position: relative;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.typography {
+    background-color: var(--primary-color);
+    position: relative;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.wireframe {
+    background-color: var(--primary-color);
+    position: relative;
+    margin: 1rem;
+    padding: 1rem;
+}
