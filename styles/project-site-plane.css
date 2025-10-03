@@ -7,11 +7,19 @@
 
 body {
     background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
 }
 
 h1 {
     background-color: var(--primary-color);
     display: inline;
+    border-radius: 0%;
+}
+
+p {
+    background-color: var(--primary-color);
+    display: block;
     border-radius: 0%;
 }
 
